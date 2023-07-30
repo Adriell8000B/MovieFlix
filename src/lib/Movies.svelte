@@ -32,14 +32,17 @@
 			</div>
 		{/each}
 	{/if}
+	<div id="line"></div>
 </section>
 
 <style lang="scss" scoped>
 	#movies {
+		position: relative;
 		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(148px, 4fr));
 		gap: 60px 30px;
+		margin-bottom: 60px;
 
 		.movie_card {
 			height: 360px;
@@ -137,6 +140,15 @@
 					}
 				}
 			}
+		}
+
+		#line {
+			--white: #ffffff1f;
+			background-color: var(--white);
+			position: absolute;
+			bottom: -60px;
+			width: 100%;
+			height: 1.5px;
 		}
 	}
 </style>

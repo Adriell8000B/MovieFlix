@@ -2,7 +2,8 @@
 	import Navbar from "../lib/Navbar.svelte"
 	import Banner from "../lib/Banner.svelte"
     import FilterNav from "../lib/FilterNav.svelte"
-    import Movies from "../lib/Movies.svelte";
+    import Movies from "../lib/Movies.svelte"
+	import Category from "../lib/Category.svelte"
 </script>
 
 <section id="Home">
@@ -10,6 +11,7 @@
 	<Banner/>
 	<FilterNav/>
 	<Movies/>
+	<Category/>
 </section>
 
 <style lang="scss" scoped>
@@ -17,7 +19,6 @@
 		#Home {
 			display: flex;
 			flex-direction: column;
-			align-items: center;
 			gap: 20px;
 		}
 	}
