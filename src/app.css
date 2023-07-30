@@ -1,0 +1,40 @@
+:root {
+	--night-blue-1: hsl(219, 32%, 10%);
+	--night-blue-2: hsl(218, 39%, 14%);
+	--dark-sky-blue: hsl(216, 100%, 50%);
+	--coal: hsl(240, 14%, 16%);
+	--white: hsl(0, 0%, 100%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: normal normal 400 16px "Poppins", "Segoe UI", Arial, serif;
+}
+
+body {
+	background: var(--night-blue-1);
+	overflow-x: hidden;
+}
+
+button {
+	display: block;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+input, select {
+	border: none;
+	background: none;
+	outline: none;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
