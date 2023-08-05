@@ -32,7 +32,8 @@
 <style lang="scss" scoped>
 	@media (min-width: 280px) {
 		header {
-			width: 100%;
+			position: sticky;
+			top: 0;
 			z-index: 1;
 			background-color: var(--night-blue-1);
 
@@ -40,7 +41,7 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				height: 8svh;
+				height: 8.4svh;
 
 				#logo {
 					font-size: 2rem;
@@ -55,9 +56,9 @@
 
 				#nav_list {
 					position: absolute;
-					top: 8svh;
+					top: 8.4svh;
 					width: 100vw;
-					height: 92svh;
+					height: 91.6svh;
 					right: 0;
 					display: flex;
 					flex-direction: column;

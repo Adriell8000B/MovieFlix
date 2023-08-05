@@ -28,46 +28,54 @@
 </section>
 
 <style lang="scss" scoped>
-	#category {
-		h2 {
-			text-align: left;
-			color: var(--white);
-			font-size: 1.5rem;
-			margin-bottom: 20px;
-		}
+	@media(min-width: 280px) {
+		#category {
+			h2 {
+				text-align: left;
+				color: var(--white);
+				font-size: 1.5rem;
+				margin-bottom: 20px;
+			}
 
-		#categories {
-			gap: 30px;
-			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(280px, 4fr));
+			#categories {
+				gap: 30px;
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(250px, 4fr));
 
-			.category_card {
-				border-radius: 20px;
-				overflow: hidden;
-				height: 180px;
-				position: relative;
+				.category_card {
+					border-radius: 20px;
+					overflow: hidden;
+					height: 180px;
+					position: relative;
 
-				img {
-					width: 100%;
-					height: 100%;
-				}
+					img {
+						width: 100%;
+						height: 100%;
+					}
 
-				.category_description {
-					position: absolute;
-					display: flex;
-					justify-content: space-between;
-					padding: 0 20px;
-					width: 100%;
-					bottom: 16px;
+					.category_description {
+						position: absolute;
+						display: flex;
+						justify-content: space-between;
+						padding: 0 20px;
+						width: 100%;
+						bottom: 16px;
 
-					span {
-						background: var(--night-blue-2);
-						color: var(--white);
-						border-radius: 12px;
-						padding: 4px 8px;
+						span {
+							background: var(--night-blue-2);
+							color: var(--white);
+							border-radius: 12px;
+							padding: 4px 8px;
+						}
 					}
 				}
 			}
+		}
+	}
+
+	@media(min-width: 324px) {
+		#category > #categories {
+			grid-template-columns: repeat(auto-fill, minmax(270px, 4fr));
 		}
 	}
 </style>
