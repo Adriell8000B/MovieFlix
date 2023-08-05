@@ -36,119 +36,127 @@
 </section>
 
 <style lang="scss" scoped>
-	#movies {
-		position: relative;
-		width: 100%;
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(148px, 4fr));
-		gap: 60px 30px;
-		margin-bottom: 60px;
+	@media(min-width: 280px) { 
+		#movies {
+			position: relative;
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(147px, 4fr));
+			gap: 60px 30px;
+			margin-bottom: 120px;
 
-		.movie_card {
-			height: 360px;
-			cursor: pointer;
+			.movie_card {
+				height: 360px;
+				cursor: pointer;
 
-			.movie_banner {
-				height: 80%;
-				border-radius: 20px;
-				position: relative;
-				overflow: hidden;
-				margin-bottom: 12px;
-
-				img {
-					width: 100%;
-					height: 100%;
-					transition: 0.3s ease;
-				}
-
-				#rating_button {
-					transition: 0.3s ease;
-					opacity: 0;
-					pointer-events: none;
-					position: absolute;
-					display: flex;
-					align-items: center;
-					top: 12px;
-					right: 12px;
-					padding: 4.5px 5px;
-					color: var(--dark-sky-blue);
-					border-radius: 6px;
-					background: var(--night-blue-2);
-					font-size: 1.2rem;
-
-					i {
-						font-size: 1.4rem;
-						display: flex;
-						margin-right: 10px;
-					}
-
-					#rating {
-						font-size: 1.1rem;
-						color: var(--white);
-						position: relative;
-						bottom: -4px;
-					}
-				}
-
-				#play {
-					transition: 0.3s ease;
-					pointer-events: none;
-					opacity: 0;
-					position: absolute;
-					inset: 0;
-					margin: auto;
-					border: 1.5px solid var(--white);
-					border-radius: 50%;
-					width: 70px;
-					height: 70px;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-					backdrop-filter: blur(16px);
-
-					svg {
-						color: var(--white);
-					}
-				}
-			}
-
-			.movie_description {
-				color: var(--white);
-
-				h3 {
-					font-size: 1.4rem;
-					font-weight: 500;
-				}
-
-				span {
-					--white: rgba(255, 255, 255, 0.891);
-					color: var(--white);
-					font-size: 0.8rem;
-				}
-			}
-
-			&:hover {
 				.movie_banner {
+					height: 80%;
+					border-radius: 20px;
+					position: relative;
+					overflow: hidden;
+					margin-bottom: 12px;
+
 					img {
-						filter: blur(5px);
-						transform: scale(1.1);
+						width: 100%;
+						height: 100%;
+						transition: 0.3s ease;
 					}
 
-					#rating_button, #play {
-						pointer-events: unset;
-						opacity: 1;
+					#rating_button {
+						transition: 0.3s ease;
+						opacity: 0;
+						pointer-events: none;
+						position: absolute;
+						display: flex;
+						align-items: center;
+						top: 12px;
+						right: 12px;
+						padding: 4.5px 5px;
+						color: var(--dark-sky-blue);
+						border-radius: 6px;
+						background: var(--night-blue-2);
+						font-size: 1.2rem;
+
+						i {
+							font-size: 1.4rem;
+							display: flex;
+							margin-right: 10px;
+						}
+
+						#rating {
+							font-size: 1.1rem;
+							color: var(--white);
+							position: relative;
+							bottom: -4px;
+						}
+					}
+
+					#play {
+						transition: 0.3s ease;
+						pointer-events: none;
+						opacity: 0;
+						position: absolute;
+						inset: 0;
+						margin: auto;
+						border: 1.5px solid var(--white);
+						border-radius: 50%;
+						width: 70px;
+						height: 70px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						backdrop-filter: blur(16px);
+
+						svg {
+							color: var(--white);
+						}
 					}
 				}
+
+				.movie_description {
+					color: var(--white);
+
+					h3 {
+						font-size: 1.4rem;
+						font-weight: 500;
+					}
+
+					span {
+						--white: rgba(255, 255, 255, 0.891);
+						color: var(--white);
+						font-size: 0.8rem;
+					}
+				}
+
+				&:hover {
+					.movie_banner {
+						img {
+							filter: blur(5px);
+							transform: scale(1.1);
+						}
+
+						#rating_button, #play {
+							pointer-events: unset;
+							opacity: 1;
+						}
+					}
+				}
+			}
+
+			#line {
+				--white: #ffffff1f;
+				background-color: var(--white);
+				position: absolute;
+				bottom: -120px;
+				width: 100%;
+				height: 1.5px;
 			}
 		}
+	}
 
-		#line {
-			--white: #ffffff1f;
-			background-color: var(--white);
-			position: absolute;
-			bottom: -60px;
-			width: 100%;
-			height: 1.5px;
+	@media(min-width: 365px) {
+		#movies {
+			grid-template-columns: repeat(auto-fill, minmax(148px, 4fr));
 		}
 	}
 </style>

@@ -25,19 +25,28 @@
 </nav>
 
 <style lang="scss" scoped>
-	#FilterNav {
-		background: var(--night-blue-2);
-		width: 100%;
-		border-radius: 18px;
-		padding: 20px 18px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 20px;
+	@media(min-width: 260px) {
+		#FilterNav {
+			background: var(--night-blue-2);
+			width: 100%;
+			border-radius: 18px;
+			padding: 20px 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 20px;
 
-		select {
-			color: var(--white);
-			background-color: var(--night-blue-2);
+			select {
+				color: var(--white);
+				background-color: var(--night-blue-2);
+				font-size: 0.8rem;
+			}
+		}
+	}
+
+	@media(min-width: 280px) {
+		#FilterNav > select {
+			font-size: 1rem;
 		}
 	}
 </style>
