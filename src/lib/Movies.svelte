@@ -2,7 +2,7 @@
 	let movies = []
 
 	async function getMovies() {
-		const response = await fetch("https://movieflix-4ql6.onrender.com")
+		const response = await fetch("https://movieflix-6dbj.onrender.com/")
 		const data = await response.json()
 		movies = data
 	}
