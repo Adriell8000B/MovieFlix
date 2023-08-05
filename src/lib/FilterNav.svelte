@@ -29,24 +29,24 @@
 		#FilterNav {
 			background: var(--night-blue-2);
 			width: 100%;
-			border-radius: 18px;
+			border-radius: 16px;
+			justify-content: space-evenly;
 			padding: 20px 10px;
 			display: flex;
-			justify-content: space-between;
 			align-items: center;
 			margin-bottom: 20px;
 
 			select {
 				color: var(--white);
-				background-color: var(--night-blue-2);
-				font-size: 0.8rem;
+				font-size: 0.75rem;
+				text-align: center;
 			}
 		}
 	}
 
-	@media(min-width: 280px) {
+	@media(min-width: 325px) {
 		#FilterNav > select {
-			font-size: 1rem;
+			font-size: 0.9rem;
 		}
 	}
 </style>
