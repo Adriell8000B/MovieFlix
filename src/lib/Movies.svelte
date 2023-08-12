@@ -1,18 +1,23 @@
-<script>
+<script lang="ts">
+	import { onMount } from "svelte"
+	import { filterText } from "../stores/filterStore"
 	let movies = []
+	let filteredMovies = []
 
-	async function getMovies() {
+	$: {
+		filteredMovies = movies.filter(movie => movie.movie_name.toLowerCasse().includes($filterText.toLowerCase()))
+	}
+
+	onMount(async () => {
 		const response = await fetch("https://movieflix-6dbj.onrender.com/")
 		const data = await response.json()
 		movies = data
-	}
-
-	getMovies()
+	})
 </script>
 
 <section id="movies">
 	{#if movies.length}
-		{#each movies as movie}
+		{#each filteredMovies as movie}
 			<div class="movie_card">
 				<div class="movie_banner">
 					<img src={movie.movie_banner} alt="">
