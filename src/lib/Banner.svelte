@@ -1,6 +1,10 @@
 <section id="Banner">
 	<div>
-		<img src="https://m.media-amazon.com/images/I/91XKS5MN9uL._AC_UF894,1000_QL80_.jpg" alt="">
+		<picture>
+			<source media="(min-width: 870px)" srcset="https://image.tmdb.org/t/p/w1280/aLtJ7LmeiEiDwWYpA2vhR6Hktc3.jpg">
+			<source media="(min-width: 650px)" srcset="https://m.media-amazon.com/images/S/pv-target-images/3a6a05ac69c3087112f6b1bb26190c4b92a13a741fdd560b7a90c0415a48ea6e._UR1920,1080_SX720_FMjpg_.jpg">
+			<img src="https://m.media-amazon.com/images/I/91XKS5MN9uL._AC_UF894,1000_QL80_.jpg" alt="">
+		</picture>
 	</div>
 </section>
 
@@ -8,6 +12,7 @@
 	#Banner {
 		width: 100%;
 		height: 550px;
+		cursor: pointer;
 
 		div {
 			width: 100%;
@@ -23,7 +28,7 @@
 
 			img {
 				width: 100%;
-				height: 100%;
+				object-fit: fill;
 				transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 			}
 		}
