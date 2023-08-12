@@ -1,11 +1,17 @@
 <script lang="ts">
 	import { Link } from "svelte-routing"
+	import { filterText } from "../stores/filterStore"
 
 	let active_menu = false
+	let inputText: string
 
 	function toggleMenu(event:Event) {
 		event.preventDefault()
 		active_menu = !active_menu
+	}
+
+	function handleInput() {
+		filterText.set(inputText)
 	}
 </script>
 
@@ -23,7 +29,7 @@
 			<div id="line3"></div>
 		</button>
 		<div id="search_box">
-			<input type="text" placeholder="Search here">
+			<input type="text" placeholder="Search here" on:input={handleInput} bind:value={inputText}>
 			<ion-icon name="search-outline"></ion-icon>
 		</div>
 	</nav>
