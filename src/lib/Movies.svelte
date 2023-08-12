@@ -5,7 +5,10 @@
 	let filteredMovies = []
 
 	$: {
-		filteredMovies = movies.filter(movie => movie.movie_name.toLowerCasse().includes($filterText.toLowerCase()))
+		filteredMovies = movies.filter(movie =>
+			movie.movie_name && typeof movie.movie_name === "string" &&
+			movie.movie_name.toLowerCase().includes($filterText.toLowerCase())
+		);
 	}
 
 	onMount(async () => {
