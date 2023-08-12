@@ -139,4 +139,35 @@
 			}
 		}
 	}
+
+	@media(min-width: 880px) {
+		header {
+			nav {
+				#nav_list {
+					position: static;
+					top: 0;
+					height: unset;
+					width: unset;
+					flex-direction: row;
+					transform: translateX(0);
+
+					li {
+						top: 0;
+					}
+				}
+
+				#hamburguer_button {
+					display: none;
+				}
+
+				#search_box {
+					width: 300px;
+					position: static;
+					inset: 0;
+					transform: translateX(0);
+					background: none;
+				}
+			}
+		}
+	}
 </style>

@@ -13,6 +13,15 @@
 	font: normal normal 400 16px "Poppins", "Segoe UI", Arial, serif;
 }
 
+::-webkit-scrollbar {
+	background: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--dark-sky-blue);
+	border-radius: 20px;
+}
+
 body {
 	background: var(--night-blue-1);
 	overflow-x: hidden;

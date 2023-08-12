@@ -47,10 +47,12 @@
 					overflow: hidden;
 					height: 180px;
 					position: relative;
+					cursor: pointer;
 
 					img {
 						width: 100%;
 						height: 100%;
+						transition: 0.3s ease;
 					}
 
 					.category_description {
@@ -66,6 +68,17 @@
 							color: var(--white);
 							border-radius: 12px;
 							padding: 4px 8px;
+							transition: 0.3s ease;
+						}
+					}
+
+					&:hover {
+						img {
+							transform: scale(1.1);
+						}
+
+						.category_description > span{
+							color: var(--dark-sky-blue);
 						}
 					}
 				}

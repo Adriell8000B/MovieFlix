@@ -40,6 +40,10 @@
 				color: var(--white);
 				font-size: 0.75rem;
 				text-align: center;
+
+				option {
+					background-color: var(--night-blue-1);
+				}
 			}
 		}
 	}
