@@ -11,7 +11,7 @@
 	}
 
 	function handleInput() {
-		filterText.set(inputText)
+		filterText.set(inputText.trim().replace(/\s+/g, " "))
 	}
 </script>
 
@@ -36,7 +36,7 @@
 </header>
 
 <style lang="scss" scoped>
-	@media (min-width: 280px) {
+	@media (min-width: 260px) {
 		header {
 			position: sticky;
 			top: 0;

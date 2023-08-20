@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from "svelte"
 	import { filterText } from "../stores/filterStore"
+	import { fade } from "svelte/transition"
 	let movies = []
 	let filteredMovies = []
 
@@ -21,7 +22,8 @@
 <section id="movies">
 	{#if movies.length}
 		{#each filteredMovies as movie}
-			<div class="movie_card">
+			<!-- svelte-ignore illegal-attribute-character -->
+			<div class="movie_card" in:fade="{{ duration: 500 }}">
 				<div class="movie_banner">
 					<img src={movie.movie_banner} alt="">
 					<button id="rating_button">
@@ -56,6 +58,7 @@
 			.movie_card {
 				height: 360px;
 				cursor: pointer;
+				transition: 0.3s ease;
 
 				.movie_banner {
 					height: 80%;
