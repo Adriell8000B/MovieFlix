@@ -30,6 +30,7 @@
 <style lang="scss" scoped>
 	@media(min-width: 280px) {
 		#category {
+			margin-bottom: 20px;
 			h2 {
 				text-align: left;
 				color: var(--white);

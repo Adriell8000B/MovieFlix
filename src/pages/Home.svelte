@@ -4,6 +4,7 @@
     import FilterNav from "../lib/FilterNav.svelte"
     import Movies from "../lib/Movies.svelte"
 	import Category from "../lib/Category.svelte"
+    import Series from "../lib/Series.svelte";
 </script>
 
 <section id="Home">
@@ -12,6 +13,7 @@
 	<FilterNav/>
 	<Movies/>
 	<Category/>
+	<Series/>
 </section>
 
 <style lang="scss" scoped>

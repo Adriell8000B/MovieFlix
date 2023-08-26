@@ -22,7 +22,6 @@
 <section id="movies">
 	{#if movies.length}
 		{#each filteredMovies as movie}
-			<!-- svelte-ignore illegal-attribute-character -->
 			<div class="movie_card" in:fade="{{ duration: 500 }}">
 				<div class="movie_banner">
 					<img src={movie.movie_banner} alt="">
@@ -46,13 +45,13 @@
 </section>
 
 <style lang="scss" scoped>
-	@media(min-width: 280px) { 
+	@media(min-width: 260px) { 
 		#movies {
 			position: relative;
 			width: 100%;
 			display: grid;
 			grid-template-columns: repeat(auto-fill, minmax(147px, 4fr));
-			gap: 60px 30px;
+			gap: 64px 30px;
 			margin-bottom: 120px;
 
 			.movie_card {
