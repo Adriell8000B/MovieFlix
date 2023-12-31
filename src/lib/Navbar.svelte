@@ -23,17 +23,25 @@
 			<Link to="/series"><li>Series</li></Link>
 			<Link to="/cartoons"><li>Cartoons</li></Link>
 		</ul>
-		<button id="hamburguer_button" class={active_menu ? "active" : ""} on:click={toggleMenu}>
+		<button id="hamburguer_button" class={ active_menu ? "active" : "" } on:click={ toggleMenu }>
 			<div id="line1"></div>
 			<div id="line2"></div>
 			<div id="line3"></div>
 		</button>
 		<div id="search_box">
-			<input type="text" placeholder="Search here" on:keyup={handleInput} bind:value={inputText}>
+			<input type="text" placeholder="Search here" on:keyup={ handleInput } bind:value={ inputText }>
 			<ion-icon name="search-outline"></ion-icon>
 		</div>
 	</nav>
 </header>
+
+{#if active_menu}
+	<style>
+		body {
+			overflow-y: hidden;
+		}
+	</style>
+{/if}
 
 <style lang="scss" scoped>
 	@media (min-width: 260px) {
@@ -64,7 +72,7 @@
 					position: absolute;
 					top: 8.4svh;
 					width: 100vw;
-					height: 91.6svh;
+					height: calc(100vh - 8.4svh);
 					right: 0;
 					display: flex;
 					flex-direction: column;

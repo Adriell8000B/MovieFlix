@@ -1,8 +1,8 @@
 {
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Tokyo Night",
     "workbench.statusBar.visible": false,
     "workbench.list.smoothScrolling": true,
-    "editor.fontSize": 12.5
+    "editor.fontSize": 12.8,
+    "workbench.activityBar.location": "hidden",
 }
