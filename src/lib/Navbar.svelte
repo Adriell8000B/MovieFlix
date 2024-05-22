@@ -82,12 +82,20 @@
 					transform: translateX(100%);
 					--night-blue-1: rgba(17, 23, 34, 0.95);
 					background-color: var(--night-blue-1);
-
+					
 					li {
 						position: relative;
 						top: 80px;
 						color: var(--white);
 						font-size: 1.1rem;
+						transition: 0.3s ease-in-out;
+						-webkit-transition: 0.3s ease-in-out;
+						-moz-transition: 0.3s ease-in-out;
+
+						&:hover {
+							color: var(--dark-sky-blue);
+						}
+
 					}
 				}
 
