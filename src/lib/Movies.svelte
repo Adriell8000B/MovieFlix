@@ -97,7 +97,7 @@
 							font-size: 1.1rem;
 							color: var(--white);
 							position: relative;
-							bottom: -4px;
+							bottom: -1px;
 						}
 					}
 

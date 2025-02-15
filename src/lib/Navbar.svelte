@@ -87,7 +87,7 @@
 						position: relative;
 						top: 80px;
 						color: var(--white);
-						font-size: 1.1rem;
+						font-size: 1.2rem;
 						transition: 0.3s ease-in-out;
 						-webkit-transition: 0.3s ease-in-out;
 						-moz-transition: 0.3s ease-in-out;
@@ -114,9 +114,7 @@
 
 					&.active {
 						#line1 {transform: rotate(45deg) translate(8px, 8px);}
-
 						#line2 {opacity: 0;}
-
 						#line3 {transform: rotate(-45deg) translate(7px, -6px);}
 					}
 				}
@@ -134,7 +132,7 @@
 					input {
 						width: 100%;
 						background-color: var(--night-blue-2);
-						padding: 10px 18px;
+						padding: 8px 18px;
 						border-radius: 20px;
 						color: var(--white);
 					}
@@ -165,6 +163,10 @@
 	@media(min-width: 880px) {
 		header {
 			nav {
+				#logo {
+					font-size: 1.5rem;
+				}
+
 				#nav_list {
 					position: static;
 					top: 0;
@@ -175,6 +177,7 @@
 
 					li {
 						top: 0;
+						font-size: 1rem;
 					}
 				}
 
@@ -188,6 +191,10 @@
 					inset: 0;
 					transform: translateX(0);
 					background: none;
+
+					input {
+						padding: 4px 18px;
+					}
 				}
 			}
 		}
