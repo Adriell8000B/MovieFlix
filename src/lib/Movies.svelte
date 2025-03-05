@@ -13,7 +13,7 @@
 	}
 
 	onMount(async () => {
-		const response = await fetch("https://movieflix-i23t.onrender.com/")
+		const response = await fetch("https://movieflix-api-hp3y.onrender.com/movies")
 		const data = await response.json()
 		movies = data
 	})
