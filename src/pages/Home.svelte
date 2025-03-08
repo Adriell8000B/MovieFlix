@@ -1,10 +1,10 @@
 <script>
-	import Navbar from "../lib/Navbar.svelte"
-	import Banner from "../lib/Banner.svelte"
-    import FilterNav from "../lib/FilterNav.svelte"
-    import Movies from "../lib/Movies.svelte"
-	import Category from "../lib/Category.svelte"
-    import Series from "../lib/Series.svelte";
+	import Navbar from "../lib/Home/Navbar.svelte"
+	import Banner from "../lib/Home/Banner.svelte"
+    import FilterNav from "../lib/Home/FilterNav.svelte"
+    import Movies from "../lib/Home/Movies.svelte"
+	import Category from "../lib/Home/Category.svelte"
+    import Series from "../lib/Home/Series.svelte"
 </script>
 
 <section id="Home">
