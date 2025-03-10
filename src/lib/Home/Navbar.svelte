@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Link } from "svelte-routing"
-	import { filterText } from "../stores/filterStore"
+	import { filterText } from "../../stores/filterStore"
 
 	let active_menu = false
 	let inputText: string
