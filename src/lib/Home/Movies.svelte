@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte"
-	import { filterText } from "../stores/filterStore"
+	import { filterText } from "../../stores/filterStore"
 	import { fade } from "svelte/transition"
 	let movies = []
 	let filteredMovies = []
