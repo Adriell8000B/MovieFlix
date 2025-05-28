@@ -15,7 +15,7 @@
 	}
 
 	onMount(async () => {
-		const response = await fetch("http://localhost:3333")
+		const response = await fetch(String(process.env["URI"]))
 		const data = await response.json()
 		movies = data
 	})
