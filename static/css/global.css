@@ -1,0 +1,49 @@
+:root {
+  --night-blue-1: #111722;
+	--night-blue-2: #162032;
+	--sky-blue: #0066ff;
+	--coal: #23232f;
+	--white: #fafafa;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font: normal normal 400 16px "Poppins", "Segoe UI", Arial, serif;
+}
+
+::-webkit-scrollbar {
+	background: none;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--sky-blue);
+	border-radius: 20px;
+}
+
+body {
+	background: var(--night-blue-1);
+	overflow-x: hidden;
+}
+
+button {
+	display: block;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+input, select {
+	border: none;
+	background: none;
+	outline: none;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
