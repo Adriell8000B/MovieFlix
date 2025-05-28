@@ -15,7 +15,7 @@
 	}
 
 	onMount(async () => {
-		const response = await fetch(String(process.env["URI"]))
+		const response = await fetch("https://movieflix-api-sb9x.onrender.com")
 		const data = await response.json()
 		movies = data
 	})
