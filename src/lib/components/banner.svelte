@@ -1,7 +1,7 @@
 <section id="Banner">
 	<div>
 		<picture>
-			<source media="(min-width: 870px)" srcset="https://image.tmdb.org/t/p/w1280/aLtJ7LmeiEiDwWYpA2vhR6Hktc3.jpg">
+			<source media="(min-width: 870px)" srcset="https://th.bing.com/th/id/R.43b9e35f0f742d257587af83c4d463c8?rik=gHs1qxNYnTRteQ&pid=ImgRaw&r=0">
 			<source media="(min-width: 650px)" srcset="https://m.media-amazon.com/images/S/pv-target-images/3a6a05ac69c3087112f6b1bb26190c4b92a13a741fdd560b7a90c0415a48ea6e._UR1920,1080_SX720_FMjpg_.jpg">
 			<img src="https://m.media-amazon.com/images/I/91XKS5MN9uL._AC_UF894,1000_QL80_.jpg" alt="">
 		</picture>
@@ -42,9 +42,9 @@
 
 	@media(min-width: 870px) {
 		#Banner {
-			height: 450px;
+			height: 500px;
 
-			img { height: 140%; }
+			img { height: 170%; }
 		}
 	}
 </style>
