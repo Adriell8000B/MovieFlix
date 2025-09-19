@@ -16,7 +16,7 @@
 	}
 
 	onMount(async () => {
-		const response = await fetch(LoadEnv("MONGODB_URI"))
+		const response = await fetch(LoadEnv("API_ORIGIN"))
 		const data = await response.json()
 		movies = data
 	})
