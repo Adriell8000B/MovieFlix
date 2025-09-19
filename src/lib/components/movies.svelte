@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { onMount } from "svelte"
-  import { filterMovie } from "$lib/stores/filterMovie"
+	import { filterMovie } from "$lib/stores/filterMovie"
 	import { fade } from "svelte/transition"
 	import type { Movie } from "$lib/types/movie"
+	import { LoadEnv } from "../../utils/utils"
 
 	let movies:Array<Movie> = []
 	let filteredMovies:Array<Movie> = []
@@ -15,7 +16,7 @@
 	}
 
 	onMount(async () => {
-		const response = await fetch("https://movieflix-api-sb9x.onrender.com")
+		const response = await fetch(LoadEnv("MONGODB_URI"))
 		const data = await response.json()
 		movies = data
 	})
