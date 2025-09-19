@@ -3,10 +3,10 @@
 	import { filterMovie } from "$lib/stores/filterMovie"
 	import { fade } from "svelte/transition"
 	import type { Movie } from "$lib/types/movie"
-	import { LoadEnv } from "../../utils/utils"
 
 	let movies:Array<Movie> = []
 	let filteredMovies:Array<Movie> = []
+	const API_URL = import.meta.env.VITE_API_URL
 
 	$: {
 		filteredMovies = movies.filter(movie =>
@@ -16,7 +16,7 @@
 	}
 
 	onMount(async () => {
-		const response = await fetch(LoadEnv("API_ORIGIN"))
+		const response = await fetch(`${API_URL}/movies`)
 		const data = await response.json()
 		movies = data
 	})
