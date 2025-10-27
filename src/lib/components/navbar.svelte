@@ -68,7 +68,7 @@
 				#nav_list {
 					position: absolute;
 					top: 8.4svh;
-					width: 100vw;
+					width: 100%;
 					height: calc(100vh - 8.4svh);
 					right: 0;
 					display: flex;
