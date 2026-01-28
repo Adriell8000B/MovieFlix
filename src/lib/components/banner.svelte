@@ -25,7 +25,7 @@
 			overflow: hidden;
 
 			div {
-				position: relative	;
+				position: relative;
 				width: 100%;
 				height: 100%;
 				border-radius: 20px;
@@ -54,7 +54,7 @@
 
 	@media (min-width: 870px) {
 		#Banner {
-			height: 500px;
+			height: 400px;
 
 			img {
 				height: 170%;
