@@ -16,7 +16,7 @@
 	}
 
 	onMount(async () => {
-		const response = await fetch(`${API_URL}/movies`)
+		const response = await fetch(`${API_URL}/api/movies`)
 		const data = await response.json()
 		movies = data
 	})
