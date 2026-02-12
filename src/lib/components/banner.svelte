@@ -40,7 +40,7 @@
 				img {
 					width: 100%;
 					object-fit: fill;
-					transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+					transition: 0.3s;
 				}
 			}
 		}
